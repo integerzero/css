@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid2</title>
+    <style>
+        /* fr = fraction*/
+       .father {
+           display: grid;
+           /*grid-auto-rows: 200px;*/
+           grid-gap: 5px;
+           /*grid-template-columns: minmax(400px, 2fr) repeat(3, 1fr);*/
+           grid-template-columns: min-content repeat(3, 1fr);
+           /*grid-template-columns: max-content repeat(3, 1fr);*/
+       }
+       .first {
+           background-color: #f1c40f;
+       }
+       .second {
+           background-color: #27ae60;
+       }
+       .third {
+           background-color: #3498db;
+       }
+       .fourth {
+           background-color: #d35400;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="first">정부가 남양주 왕숙과 하남 교산, 인천 계양 등 3기 신도시와 과천지구에 대한 지구지정을 한다. 지난해 연말 ‘수도권 30만 가구 공급계획’ 2차 발표에서 언급한 대규모 택지들이다. 내년까지 이들 지역에 대한 토지보상과 지구단위계획 수립을 끝내고 2021년부터 분양을 시작한다는 방침이다.</div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+</body>
+
+</html>
